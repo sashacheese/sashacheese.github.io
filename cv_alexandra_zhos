@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandra Zhos - CV</title>
+    <style>
+        /* Basic styling for print and readability */
+        body {
+            font-family: 'Inter', sans-serif; /* Using Inter for a clean, modern look */
+            line-height: 1.6;
+            margin: 20mm 25mm; /* Standard margins for A4/Letter size print */
+            color: #333;
+            -webkit-print-color-adjust: exact; /* Ensures background colors are printed */
+            print-color-adjust: exact;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #222;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+        h1 {
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 0.2em;
+        }
+        h2 {
+            font-size: 1.4em;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 1.5em;
+        }
+        h3 {
+            font-size: 1.1em;
+            margin-top: 1em;
+            margin-bottom: 0.2em;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        ul ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+        strong {
+            font-weight: bold;
+        }
+        em {
+            font-style: italic;
+        }
+        .header-info {
+            text-align: center;
+            margin-bottom: 1.5em;
+            font-size: 0.95em;
+            color: #555;
+        }
+        .section-divider {
+            border-bottom: 1px solid #ddd;
+            margin: 1.5em 0;
+        }
+        .experience-item {
+            margin-bottom: 1em;
+        }
+        .experience-item h3 {
+            margin-bottom: 0.1em;
+        }
+        .experience-item p {
+            margin: 0;
+        }
+        .experience-item ul {
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
+            /* Hide button when printing */
+            @media print {
+                display: none;
+            }
+        }
+        .print-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .print-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        // Function to trigger the print dialog
+        function printCV() {
+            window.print();
+        }
+    </script>
+</head>
+<body>
+
+    <div class="button-container">
+        <button class="print-button" onclick="printCV()">Download / Print CV</button>
+    </div>
+
+    <!-- CV Content Starts Here -->
+    <h1>ALEXANDRA ZHOS</h1>
+    <p class="header-info">Project & Product Lead | Marketing Manager</p>
+    <p class="header-info">Istanbul, Turkiye | zhosalexandra@gmail.com | +905526162820</p>
+
+    <h2>SUMMARY / CAREER OBJECTIVE</h2>
+    <p>A seasoned professional with 9+ years of diverse experience in marketing, business development, and content creation across various industries, from tech and Web3 to personal development courses. I'm passionate about discovering unusual yet grounded solutions to bring bold, impactful ideas to life.</p>
+    <p>Eager to transition into Project or Product Management roles within forward-thinking teams, with a strong preference for AI and innovation-driven environments. My core strengths lie in effectively balancing strategic thinking with practical execution, enabling me to lead projects from concept to launch.</p>
+    <p>I thrive in dynamic environments, learning rapidly by diving in and optimizing solutions based on deep market analyses, human psychology, and available resources.</p>
+
+    <h2>KEY SKILLS</h2>
+    <h3>Project Management & Strategic Leadership:</h3>
+    <ul>
+        <li>Project Planning & Coordination</li>
+        <li>Strategic Roadmapping</li>
+        <li>Market & Trend Analysis</li>
+        <li>Resource Optimization</li>
+        <li>Partnership Development</li>
+        <li>Data-Informed Strategy</li>
+        <li>Problem-Solving</li>
+        <li>Team Coordination & Collaboration</li>
+    </ul>
+
+    <h3>Marketing:</h3>
+    <ul>
+        <li>Digital Marketing (SEO, Google Ads, SMM, Email Marketing)</li>
+        <li>Product Launch & Positioning</li>
+        <li>Sales Funnel Optimization</li>
+        <li>Lead Generation</li>
+        <li>Cold Outreach</li>
+        <li>User Engagement Boosting Strategies</li>
+        <li>Content Strategy</li>
+    </ul>
+
+    <h3>Content Production:</h3>
+    <ul>
+        <li>AI Image & Video Generation (Google Veo 2/3, KlING 2.1, HeyGen, Seedance)</li>
+        <li>Prompt Engineering (Visual & Text)</li>
+        <li>Video & Photo Editing (Adobe Premiere Pro / Photoshop)</li>
+        <li>Art Direction & Visual Strategy</li>
+        <li>Scriptwriting & Storytelling</li>
+        <li>Copywriting (Marketing, Technical, Social Media)</li>
+    </ul>
+
+    <h2>PROFESSIONAL EXPERIENCE</h2>
+
+    <div class="experience-item">
+        <h3>Freelance Marketing Consultancy | Web3 Project: Telegram Mini-app Game | April – June 2025</h3>
+        <ul>
+            <li>For a newly emerging Telegram Mini-App game, I researched and analyzed the best practices of top-performing competitors and their growth journeys.</li>
+            <li>Then, I developed hypotheses for the marketing strategy and the product launch campaign.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Business Development Manager | Web3 Startup (Ordinals Marketplace / Gamified AI-generation tool for artists) | October 2024 – March 2025</h3>
+        <ul>
+            <li>Created and carried out plans to bring creators on board and build key partnerships within the Web3 creative space.</li>
+            <li>Built a database of creative projects/artists for collaboration and led a team doing cold outreach.</li>
+            <li>Made engaging content for X (Twitter) and held calls with potential partners to explain our value.</li>
+            <li><strong>Results:</strong> Secured 20 interested projects and successfully launched 4 creators on the platform, despite a nascent USP.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Head of Marketing | Skalfa (Dating Software) | March 2022 – October 2023</h3>
+        <ul>
+            <li>Led the creation and execution of marketing strategies to grow user acquisition and engagement significantly.</li>
+            <li>Guided sales, SEO, and design teams to boost lead generation plans into action.</li>
+            <li>Creating in-depth niche articles for the blog as part of the SEO strategy.</li>
+            <li>Achieved stable top-3 Google search rankings by optimizing SEO strategies.</li>
+            <li>Revitalized email marketing for the existing database, achieving an average open rate of 19.3%.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Marketing Team Lead | Integral Relationship Center (Online Courses, Psychology) | October 2020 – January 2022</h3>
+        <ul>
+            <li>Developed and managed social media content and email marketing campaigns to connect better with our audience.</li>
+            <li>Ran targeted digital campaigns that successfully increased customer engagement and sales for online psychology courses.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Freelance Marketing and Content Creator | Remote | January 2019 – October 2020</h3>
+        <ul>
+            <li>Developed online brand concepts and digital strategies, including building WordPress websites.</li>
+            <li>Created engaging social media content and wrote compelling copy for web pages, shaping the brand's voice.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Product Marketing Manager | Amasty | November 2016 – November 2018</h3>
+        <ul>
+            <li>Created and improved landing pages with a persuasive copy to increase conversion rates.</li>
+            <li>Developed and put SEO strategies into practice, writing technical articles that boosted online visibility.</li>
+            <li>Looked at customer requests and competitor offerings to help guide product development and market positioning.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>Project Manager | Marketing Research Company 'Sarmont' | May 2016 – November 2016</h3>
+        <ul>
+            <li>Managed marketing research projects from start to finish, including surveys, focus groups, and 'mystery shopper' initiatives.</li>
+            <li>Handled recruitment for studies and managed reporting activities to keep projects running smoothly.</li>
+        </ul>
+    </div>
+
+    <div class="experience-item">
+        <h3>CMO Assistant in a Start-up | ChangeAgain.me | July 2015 – October 2015</h3>
+        <ul>
+            <li>Managed and improved website content, social media accounts, and digital ad campaigns (SEO, email marketing).</li>
+            <li>Monitored website performance and competitor activities to drive engagement and growth during a key startup phase.</li>
+        </ul>
+    </div>
+
+    <h2>EDUCATION</h2>
+
+    <div class="experience-item">
+        <h3>Belarusian State Economic University</h3>
+        <p>Bachelor's Degree, Faculty of Marketing, Specialization: International Marketing</p>
+        <p>September 2012 – January 2017</p>
+    </div>
+
+    <div class="experience-item">
+        <h3>European College of Liberal Arts</h3>
+        <p>Concentration: 'Mass Media and Culture'</p>
+        <p>September 2016 – May 2017</p>
+    </div>
+
+    <h2>ADDITIONAL INFORMATION</h2>
+    <p><strong>Languages:</strong> English (Fluent), Russian (Native), Belarusian (Native), Turkish (Basic).</p>
+    <p><strong>Certifications:</strong> Product Management Courses Laba (2018), Google AdWords (2016), Documentary Film Course (2017), Short Video Course (2018).</p>
+
+</body>
+</html>
