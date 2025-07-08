@@ -172,7 +172,7 @@
             }
             .cv-container {
                 margin: 0;
-                padding: 5mm 5mm; /* Adjusted print margins for more content space */
+                padding: 5mm 0mm; /* Adjusted print margins for more content space */
                 max-width: 100%; /* Allow full width for print */
                 border: none; /* Remove border for print */
                 box-shadow: none; /* Remove shadow for print */
@@ -181,7 +181,7 @@
             .skills-grid-container {
                 /* For print, ensure columns are well-spaced */
                 grid-template-columns: repeat(2, 1fr);
-                gap: 15px; /* Slightly smaller gap for print compactness */
+                gap: 5px; /* Further reduced gap for maximum horizontal stretch in print */
             }
             .experience-item {
                 border-left: 2px solid #3498db; /* Thinner border for print */
