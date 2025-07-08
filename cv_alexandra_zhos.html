@@ -150,11 +150,11 @@
             transform: translateY(-2px); /* Slight lift on hover */
         }
 
-        /* Styles for 3-column skills layout */
+        /* Styles for 2-column skills layout */
         .skills-grid-container {
             display: grid;
-            /* Creates 3 columns, adjusting for responsiveness */
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adjusted minmax for compactness */
+            /* Creates 2 columns, adjusting for responsiveness */
+           grid-template-columns: repeat(2, 1fr); /* Adjusted minmax for compactness */
             gap: 20px; /* Increased gap for better column separation */
             margin-bottom: 1.8em; /* Adjusted margin */
         }
@@ -180,7 +180,7 @@
             }
             .skills-grid-container {
                 /* For print, ensure columns are well-spaced */
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
                 gap: 15px; /* Slightly smaller gap for print compactness */
             }
             .experience-item {
