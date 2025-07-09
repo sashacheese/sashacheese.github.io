@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Alexandra Zhos - CV</title>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic styling for print and readability */
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.35; /* Slightly reduced line height for compactness */
+            font-size: 0.9em; /* Smaller base font size for more content per page */
+            color: #333;
+            background-color: #f8f9fa; /* Very light gray background for a softer look */
+            -webkit-print-color-adjust: exact; /* Ensures background colors are printed */
+            print-color-adjust: exact;
+            margin: 0;
+        }
+
+        /* Main content wrapper for centering the entire CV block */
+        .cv-container {
+            max-width: 800px; /* Optimal width for readability and print */
+            margin: 15mm auto; /* Adjusted top/bottom margin, still centered horizontally */
+            padding: 15px; /* Increased internal padding for better visual spacing */
+            background-color: #ffffff; /* White background for the CV content */
+            border: 1px solid #e0e0e0; /* Subtle border */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); /* Soft shadow for depth */
+            border-radius: 10px; /* More rounded corners for a modern feel */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50; /* Dark blue-gray for headings */
+            margin-top: 1em; /* Adjusted top margin */
+            margin-bottom: 0.4em; /* Adjusted bottom margin */
+        }
+
+        h1 {
+            font-size: 1.8em; /* Slightly larger font for main name */
+            text-align: center;
+            margin-bottom: 0.2em;
+            font-weight: 700; /* Bolder for main name */
+            letter-spacing: 0.05em; /* A bit of letter spacing for elegance */
+        }
+
+        h2 {
+            font-size: 1.3em; /* Adjusted font size */
+            border-bottom: 2px solid #bdc3c7; /* Medium gray, slightly thicker border */
+            padding-bottom: 3px; /* Adjusted padding */
+            margin-top: 1em; /* More space above main sections */
+            color: #34495e; /* Slightly lighter blue-gray for section titles */
+            text-transform: uppercase; /* Uppercase for section titles */
+            letter-spacing: 0.03em; /* Subtle letter spacing */
+        }
+
+        h3 {
+            font-size: 1.05em; /* Slightly larger font size */
+            margin-top: 1em; /* Adjusted top margin */
+            margin-bottom: 0.2em; /* Adjusted bottom margin */
+            color: #34495e; /* Consistent heading color */
+            font-weight: 600; /* Semi-bold for sub-headings */
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px; /* Adjusted margin for readability */
+            padding-left: 0;
+            margin-top: 0.5em; /* Adjusted top margin */
+            margin-bottom: 0.5em; /* Adjusted bottom margin */
+        }
+
+        ul ul {
+            list-style-type: circle;
+            margin-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 0.2em; /* Adjusted space between list items */
+        }
+
+        strong {
+            font-weight: 600; /* Semi-bold */
+        }
+
+        em {
+            font-style: italic;
+        }
+
+        .header-info {
+            text-align: center;
+            margin-bottom: 1.5em; /* Adjusted margin */
+            font-size: 0.9em; /* Adjusted font size */
+            color: #7f8c8d; /* Soft gray for contact info */
+            line-height: 1.4;
+        }
+
+        .section-divider {
+            border-bottom: 1px solid #ddd;
+            margin: 1.5em 0;
+        }
+
+        .experience-item {
+            margin-bottom: 1.5em; /* Increased margin between experience items for better separation */
+            border-left: 5px solid #3498db; /* Prominent blue accent bar on the left */
+            padding-left: 20px; /* More padding for the text next to the bar */
+            background-color: #fdfdfd; /* Slightly off-white background for items */
+            border-radius: 6px; /* Subtle rounded corners for items */
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03); /* Very light shadow for individual items */
+        }
+
+        .experience-item h3 {
+            margin-bottom: 0.15em; /* Adjusted margin */
+        }
+
+        .experience-item p {
+            margin: 0;
+        }
+
+        .experience-item ul {
+            margin-top: 0.5em; /* Adjusted top margin */
+            margin-bottom: 0.5em; /* Adjusted bottom margin */
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 15px; /* Adjusted margin */
+            /* Hide button when printing */
+            @media print {
+                display: none;
+            }
+        }
+
+        .print-button {
+            padding: 10px 25px; /* Larger button for better clickability */
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            background-color: #28a745; /* Green button for "Download/Print" */
+            color: white;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Button shadow */
+        }
+
+        .print-button:hover {
+            background-color: #218838;
+            transform: translateY(-2px); /* Slight lift on hover */
+        }
+
+        /* Styles for 2-column skills layout */
+        .skills-grid-container {
+            display: grid;
+            /* Creates 2 columns, adjusting for responsiveness */
+           grid-template-columns: repeat(2, 1fr); /* Adjusted minmax for compactness */
+            gap: 20px; /* Increased gap for better column separation */
+            margin-bottom: 1.8em; /* Adjusted margin */
+        }
+
+        .skill-category {
+            /* Ensures each skill category takes its own column */
+            break-inside: avoid-column;
+        }
+
+        /* Adjustments for print */
+        @media print {
+            body {
+                margin: 0;
+                background-color: #ffffff; /* Ensure white background for print */
+            }
+            .cv-container {
+                margin: 0;
+                padding: 5mm 0mm; /* Adjusted print margins for more content space */
+                max-width: 100%; /* Allow full width for print */
+                border: none; /* Remove border for print */
+                box-shadow: none; /* Remove shadow for print */
+                border-radius: 0; /* Remove rounded corners for print */
+            }
+            .skills-grid-container {
+                /* For print, ensure columns are well-spaced */
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px; /* Further reduced gap for maximum horizontal stretch in print */
+            }
+            .experience-item {
+                border-left: 2px solid #3498db; /* Thinner border for print */
+                background-color: transparent; /* No background for print */
+                box-shadow: none; /* No shadow for print */
+                border-radius: 0; /* No rounded corners for print */
+                padding-top: 0px;
+                padding-bottom: 2px;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                color: #000; /* Black for print headings */
+            }
+            .header-info {
+                color: #333; /* Darker gray for print contact info */
+            }
+        }
+    </style>
+    <script>
+        function printCV() {
+            window.print();
+        }
+    </script>
+</head>
+<body>
+
+    <div class="button-container">
+        <button class="print-button" onclick="printCV()">Download / Print CV</button>
+    </div>
+
+    <div class="cv-container">
+        <h1>ALEXANDRA ZHOS</h1>
+        <p class="header-info">Project & Product Lead | Marketing Manager</p>
+        <p class="header-info">Istanbul, Turkiye | zhosalexandra@gmail.com | +905526162820</p>
+
+        <h2>SUMMARY</h2>
+        <p>A seasoned professional with 8+ years of diverse experience in marketing, business development, and content creation across various industries, from tech and Web3 to personal development courses. I'm passionate about discovering unusual yet grounded solutions and bring bold, impactful ideas to life.</p>
+        <p>Eager to transition into Project or Product Management roles within forward-thinking teams. My preference is for companies that leverage AI and are driven by innovation.</p>
+
+
+        <h2>KEY SKILLS</h2>
+        <div class="skills-grid-container">
+            <div class="skill-category">
+                <h3>Project Management & Strategic Leadership:</h3>
+                <ul>
+                    <li>Project Planning & Coordination</li>
+                    <li>Team Coordination & Collaboration</li>
+                     <li>Agile Methodologies (Kanban, Scrum basics)</li>
+                    <li>Strategic Roadmapping</li>
+                    <li>Partnership Development</li>
+                    <li>Market & Trend Analysis</li>
+                </ul>
+                <h3>Marketing & Business Development:</h3>
+                <ul>
+                    <li>Digital Marketing (SEO, Google Ads, SMM, Email Marketing)</li>
+                    <li>Lead Generation & Cold Outreach</li>
+                    <li>Content Strategy & Copywriting (Marketing, Technical, Social Media)</li>
+            
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools & Creative Production:</h3>
+                <ul>
+                    <li>AI Image & Video Generation (Google Veo 2/3, KLING 2.1, HeyGen, Seedance, Midjourney)</li>
+                    <li>Video & Photo Editing (Adobe Premiere Pro / Photoshop)</li>
+                    <li>Storytelling, Scriptwriting</li>
+                    <li>Project Management Tools (Jira, Trello, Notion)</li>
+                    <li>CRM Software (Zoho, HubSpot)</li>
+                    <li>Email Marketing Platforms (Mailchimp, Moosend)</li>
+                    <li>WordPress, HTML</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>PROFESSIONAL EXPERIENCE</h2>
+
+         <div class="experience-item">
+            <h3>Freelance Marketing Consultancy | Telegram Mini-app Game (3.6M channel subscribers)</h3>
+            <p>April – June 2025</p>
+            <ul>
+                <li>Researched and analyzed competitors' growth strategies.</li>
+                <li>Developed hypotheses for marketing and launch strategy.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Business Development Manager | Web3 Startup (Ordinals Marketplace / Gamified AI-generation tool for artists)</h3>
+            <p>October 2024 – March 2025</p>
+            <ul>
+                <li>Led outreach and onboarding of creators; built key partnerships from scratch.</li>
+                <li>Created a database of artists/projects and managed a cold outreach team.</li>
+                <li>Produced content for X (Twitter)</li>
+                 <li> Pitched the project on partner calls.</li>
+                <li><strong>Results:</strong> Secured 20 interested projects and launched 4 creators on the platform, despite a nascent USP.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Head of Marketing | Skalfa (Dating Software)</h3>
+            <p>March 2022 – October 2023</p>
+            <ul>
+                <li>Developed and executed marketing strategies to drive user growth.</li>
+                <li>Led cross-functional team (3–5 people) across sales, SEO, and design.</li>
+                <li><strong>Results:</strong>Achieved stable top-3 Google search rankings by optimizing SEO strategies.</li>
+                <li>Improved email marketing, hitting a 19.3% open rate.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Marketing Team Lead | Integral Relationship Center (Online Courses, Psychology)</h3>
+            <p>October 2020 – January 2022</p>
+            <ul>
+                <li>Led the team (3 people) in developing and managing social media and email marketing campaigns.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Freelance Marketing and Content Creator | Remote</h3>
+            <p>January 2019 – October 2020</p>
+            <ul>
+                <li>Developed online brand concepts and digital strategies, including building WordPress websites.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>Product Marketing Manager | Amasty</h3>
+            <p>November 2016 – November 2018</p>
+            <ul>
+                <li>Created and improved landing pages with a persuasive copy to increase conversion rates.</li>
+                <li>Collaborated with product managers on feature implementation, informed by market research and client requests.</li>
+            </ul>
+        </div>
+
+       <div class="experience-item">
+            <h3>Project Manager | Sarmont</h3>
+            <p>May 2016 – Nov 2016</p>
+            <ul>
+                <li>Led research projects: surveys, focus groups, and shopper studies.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <h3>CMO Assistant | ChangeAgain.me</h3>
+            <p>Jul 2015 – Oct 2015</p>
+            <ul>
+                <li>Managed web content, SEO, email marketing, and ad campaigns.</li>
+            </ul>
+        </div>
+
+
+        <h2>EDUCATION</h2>
+        <div class="experience-item">
+            <h3>Belarusian State Economic University</h3>
+            <p>Bachelor's Degree, Faculty of Marketing, Specialization: International Marketing</p>
+            <p>Sep 2012 – Jan 2017</p>
+        </div>
+
+        <div class="experience-item">
+            <h3>European College of Liberal Arts</h3>
+            <p>Concentration: 'Mass Media and Culture'</p>
+            <p>Sep 2016 – May 2017</p>
+        </div>
+
+        <h2>ADDITIONAL INFORMATION</h2>
+        <p style="margin-bottom:0em" ><strong>Languages:</strong> English (Fluent), Russian (Native), Belarusian (Native), Turkish (Basic)</p>
+        <p style="margin-top:0em"><strong>Certifications:</strong> Product Management (Laba), Google AdWords, Documentary & Short Video Courses</p>
+    </div>
+</body>
+</html>
